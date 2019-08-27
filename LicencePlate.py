@@ -19,16 +19,16 @@ def callback():
 
     getInput(inputFile)
 
-    # detectButton = tk.Button(m, text = 'Detect Licence Plate', command=getInput(inputFile))
-    # detectButton.configure(fg="white", bg="black", font=("Helvetica",10,'bold'), width = 20, bd=1)
-    # detectButton.place(relx = 0.5, rely = 0.6, anchor = 'center') 
+    detectButton = tk.Button(m, text = 'Detect Licence Plate', command=getInput(inputFile))
+    detectButton.configure(fg="white", bg="black", font=("Helvetica",10,'bold'), width = 20, bd=1)
+    detectButton.place(relx = 0.5, rely = 0.6, anchor = 'center') 
 
-    # OpenCSV = tk.Button(m, text = 'Open CSV File', command=openCSV())
-    # OpenCSV.configure(fg="white", bg="black", font=("Helvetica",10,'bold'), width = 20, bd=1)
-    # OpenCSV.place(relx = 0.5, rely = 0.6, anchor = 'center') 
+    OpenCSV = tk.Button(m, text = 'Open CSV File', command=openCSV())
+    OpenCSV.configure(fg="white", bg="black", font=("Helvetica",10,'bold'), width = 20, bd=1)
+    OpenCSV.place(relx = 0.5, rely = 0.6, anchor = 'center') 
 
-# def openCSV():
-#     os.startfile("abcd.csv")
+def openCSV():
+    os.startfile("LicencePlate.csv")
 
     
 def getInput(inputFile):
