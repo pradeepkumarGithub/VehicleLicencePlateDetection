@@ -31,9 +31,8 @@ def getInput(inputFile):
 
     if inputFile.endswith(".csv"):
         data = pd.read_csv(os.path.normpath(inputFile))
-            
-        
-        
+   
+                
         for url in data['content']:
             urllib.request.urlretrieve(url,f"input\\{fileName}.jpeg")
             orgImg = cv.imread(f"input\\{fileName}.jpeg")
